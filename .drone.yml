@@ -1,0 +1,11 @@
+kind: pipeline
+
+steps:
+  - name: build
+    image: alpine
+    commands:
+      - echo "build"
+
+trigger:
+  branch:
+    - master
