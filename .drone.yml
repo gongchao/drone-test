@@ -1,6 +1,11 @@
 kind: pipeline
+name: drone-test
 
 steps:
+  - name: install
+    image: alpine
+    commands:
+      - echo "installs"
   - name: build
     image: alpine
     commands:
